@@ -1,0 +1,27 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "inoxlongtuyen",
+	"main": "./src/worker.ts",
+	"compatibility_date": "2026-02-24",
+	"compatibility_flags": ["nodejs_compat"],
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "inoxlongtuyen",
+			// Run `wrangler d1 create my-emdash-site` and paste the real ID here for deploy
+			"database_id": "e0b02065-f82a-4a94-84a0-60e532a1efd7",
+		},
+	],
+	"r2_buckets": [
+		{
+			"binding": "MEDIA",
+			"bucket_name": "inoxlongtuyen","preview_bucket_name": "inoxlongtuyen",
+		},
+	],
+	// Worker Loader for plugin sandboxing
+	"worker_loaders": [
+		{
+			"binding": "LOADER",
+		},
+	],
+}
