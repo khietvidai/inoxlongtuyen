@@ -18,10 +18,16 @@
 			"bucket_name": "inoxlongtuyen","preview_bucket_name": "inoxlongtuyen",
 		},
 	],
-	// Worker Loader for plugin sandboxing
-	"worker_loaders": [
-		{
-			"binding": "LOADER",
-		},
+	"kv_namespaces": [
+	{
+		"binding": "SESSION",
+		"id": "03a41c0803ff48c5b78f8d02bec0b7fa"
+	}
 	],
+	// Worker Loader for plugin sandboxing
+	// "worker_loaders": [
+	// 	{
+	// 		"binding": "LOADER",
+	// 	},
+	// ],
 }
